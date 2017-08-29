@@ -12,7 +12,7 @@
         <!--LogInViewController-->
         <scene sceneID="Xfj-zG-TLh">
             <objects>
-                <viewController title="LogInViewController" id="vUp-Rw-bjY" customClass="LogInViewController" customModule="FirebaseTuturial1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogIn" title="LogInViewController" id="vUp-Rw-bjY" customClass="LogInViewController" customModule="FirebaseTuturial1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MHn-h4-4Vb"/>
                         <viewControllerLayoutGuide type="bottom" id="MLj-57-tnW"/>
@@ -135,6 +135,9 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccountAction:" destination="1NS-Dw-I0z" eventType="touchUpInside" id="654-sX-8BY"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SbM-wu-XWF">
                                 <rect key="frame" x="52" y="325" width="270" height="30"/>
@@ -153,6 +156,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="SbM-wu-XWF" id="MSn-KL-jv6"/>
+                        <outlet property="passwordTextField" destination="l41-5I-9k4" id="dTs-W3-Vdo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1bJ-dB-Ghb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
